@@ -14,7 +14,7 @@ jobs:
         # 1. 定义需要同步的镜像列表（源镜像 -> 腾讯云目标镜像）
         # 
         declare -A images=(
-# 修正后的 KServe 核心组件镜像路径（源路径变更为 Docker Hub）
+        # 修正后的 KServe 核心组件镜像路径（源路径变更为 Docker Hub）
           ["kserve/kserve-controller:v0.12.0"]="ccr.ccs.tencentyun.com/hahere-public/sync:kserve-controller-v0.12.0"
           ["kserve/storage-initializer:v0.12.0"]="ccr.ccs.tencentyun.com/hahere-public/sync:storage-initializer-v0.12.0"
           ["kserve/agent:v0.12.0"]="ccr.ccs.tencentyun.com/hahere-public/sync:agent-v0.12.0"       )
